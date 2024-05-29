@@ -1,0 +1,25 @@
+header {
+    display: flex;
+    float: right;
+}
+
+.form {
+    display: flex;
+    justify-content: column-reverse; 
+}
+
+#submit {
+  background-color: #ff00c8;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 24px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: background-color 0.3s;
+}
+
+#submit:hover {
+  background-color: #0056b3;
+}

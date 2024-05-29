@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="dark-mode-style" href="./assets/css/darkmode.css" />
   </head>
-  <header>
-    <button>🌓</button>
-  </header>
   <body>
-    <div class="form">
+    <header>
+      <button id="dark-mode-toggle">🌓</button>
+    </header>
+    <form>
       <h1>What's on your mind?</h1>
       <div>
         <h2>Username</h2>
@@ -23,8 +24,9 @@
       <div>
         <h2>Comment</h2>
         <input type="text" />
+        <button id="submit">Submit</button>
       </div>
-    </div>
+    </form>
     <img src="./assets/imgs/200x200.png" alt="my blog logo" />
     <script src="./assets/js/index.js"></script>
     <script src="./assets/js/darkmode.js"></script>
