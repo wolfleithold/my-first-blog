@@ -1,15 +1,47 @@
-header {
-    display: flex;
+
+
+#dark-mode-toggle {
     float: right;
+    margin-top: 15px;
+    margin-right: 15px;
 }
 
-.form {
+form {
     display: flex;
-    justify-content: column-reverse; 
+    flex-direction: column; 
+    margin-top: 75px
+    
 }
 
+input[type=text] {
+    padding: 5px 15px;
+    box-sizing: border-box;
+    border: 2px solid #000;
+    border-radius: 5px;
+    width: 150%;
+  }
+/* added a bigger box for the main content to go in. a basic form element
+did not seem appropriate */
+  .paragraph-box {
+    width: 150%;
+    padding: 20px;
+    border: 2px solid #000; 
+    border-radius: 8px; 
+    box-sizing: border-box; 
+  }
+  
+  textarea {
+    width: 100%; 
+    height: 200px; 
+    padding: 10px; 
+    box-sizing: border-box; 
+    border: none; 
+    outline: none; 
+    resize: vertical; 
+  }
+/* i wanted to make my submit button a bit flashy */
 #submit {
-  background-color: #ff00c8;
+  background-color: #ff00c8; 
   color: white;
   border: none;
   padding: 10px 20px;
@@ -18,8 +50,22 @@ header {
   cursor: pointer;
   border-radius: 30px;
   transition: background-color 0.3s;
+  margin-top: 30px;
+  width: 175px;
+}
+/* i think the hover makes it look more professional */
+#submit:hover {
+  background-color: #96118b;
 }
 
-#submit:hover {
-  background-color: #0056b3;
+.grab {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center; 
+}
+
+img {
+    width: 400px; 
+    height: auto; 
 }
