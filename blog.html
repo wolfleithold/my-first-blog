@@ -3,14 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/blog.css" />
+    <title>Blog Posts</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/darkmode.css" />
   </head>
-  <header>
-    <button>🌓</button>
-  </header>
   <body>
-    <script src="./assets/js/blog.js"></script>
+    <header>
+      <h1 class="heading">Blog Posts</h1>
+      <button id="dark-mode-toggle">🌓</button>
+    </header>
+
+    <main>
+      <div id="posts-container"></div>
+
+      <button id="back-btn">Back to Form</button>
+    </main>
+    <div class="blogo">
+      <svg width="1000" height="1000" xmlns="http://www.w3.org/2000/svg">
+        <g transform="scale(3)">
+          <circle cx="150" cy="100" r="80" fill="Tan" />
+          <text
+            x="150"
+            y="125"
+            font-size="60"
+            text-anchor="middle"
+            fill="black"
+          >
+            WBB
+          </text>
+        </g>
+      </svg>
+    </div>
+    <footer>
+      <ul>
+        Made by Wolfgang Leithold
+      </ul>
+      <ul>
+        My github
+      </ul>
+      <ul>
+        My linkedin
+      </ul>
+    </footer>
+
     <script src="./assets/js/darkmode.js"></script>
+    <script src="./assets/js/blog.js"></script>
   </body>
 </html>

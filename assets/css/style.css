@@ -1,16 +1,47 @@
+body {
+  position: relative;
+  background-color: white;
+  color: black;
+}
+
 
 
 #dark-mode-toggle {
-    float: right;
-    margin-top: 15px;
-    margin-right: 15px;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  padding: 10px 20px;
+  background-color: rgb(168, 161, 161);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 form {
-    display: flex;
-    flex-direction: column; 
-    margin-top: 75px
-    
+  display: flex;
+  flex-direction: column;
+  margin-top: 75px;
+  position: absolute;
+  right: 40%;
+  transform: translateX(50%);
+}
+
+@media (max-width: 768px) {
+  form {
+    right: 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  form {
+    position: static;
+    margin: 0 auto;
+    transform: none;
+    width: 100%;
+    max-width: 600px;
+  }
 }
 
 input[type=text] {
@@ -20,8 +51,7 @@ input[type=text] {
     border-radius: 5px;
     width: 150%;
   }
-/* added a bigger box for the main content to go in. a basic form element
-did not seem appropriate */
+
   .paragraph-box {
     width: 150%;
     padding: 20px;
@@ -65,7 +95,108 @@ did not seem appropriate */
     align-items: center; 
 }
 
-img {
-    width: 400px; 
-    height: auto; 
+.logo {
+  width: 400px;
+  height: auto;
+  position: absolute;
+  left: 25%;
+  transform: translateX(-50%);
 }
+
+@media (max-width: 768px) {
+  .logo {
+    left: 20%;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    left: 15%;
+  }
+}
+
+@media (max-width: 500px) {
+  .logo {
+    display: none;
+  }
+}
+
+.heading {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 48px; 
+    text-align: center; 
+    margin-top: 50px;
+}
+
+body.dark-mode {
+  background-color: black !important;
+  color: white !important;
+}
+
+body.dark-mode header {
+  background-color: #000000 !important;
+  color: white !important;
+}
+
+body.dark-mode input,
+body.dark-mode textarea {
+  background-color: #dad2d2 !important;
+  color: white !important;
+}
+
+body.dark-mode h1,
+body.dark-mode h2 {
+  color: #ddd !important;
+}
+
+#back-btn {
+  position: fixed;
+  top: 20px;
+  right: 100px;
+  padding: 10px 20px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+}
+#posts-container {
+  display: flex;
+  flex-direction: column; 
+  align-items: left; 
+  margin-top: 50px;
+  margin-left: 50px;
+  width: 100%; 
+}
+
+.post {
+  background-color: #e7a1a1; 
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  width: auto; 
+  max-width: 600px; 
+}
+
+
+
+.blogo {
+  position: fixed; 
+  top: 80%; 
+  right: 0; 
+  transform: translateY(-50%); 
+  margin-top: -50px; 
+  margin-bottom: -50px; 
+}
+
+@media (max-width: 1500px) {
+  .blogo {
+    display: none; 
+  }
+}
+
+
